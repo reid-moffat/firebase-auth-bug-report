@@ -40,7 +40,7 @@ function App() {
                 if (!r.user.emailVerified) {
                     throw 'Unverified email';
                 }
-                console.log('Logged in successfully')
+                console.log(`Logged in successfully: ${JSON.stringify(r, null, 4)}`)
             })
             .catch((err) => {console.log(`Error signing in: ${JSON.stringify(err, null, 4)}`)});
     }
